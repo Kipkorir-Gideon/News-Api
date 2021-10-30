@@ -17,3 +17,20 @@ def configure_request(app):
     base_url = app.config['SOURCE_BASE_URL']
     articles_url = app.config['ARTICLE_BASE_URL']
 
+def get_news(category):
+    '''
+    Function that gets the json response to our url request
+    '''
+    get_news_url = base_url.format(category,api_key)
+
+    with urllib.request.urlopen(get_news_url) as url:
+        get_news_data = url.read()
+        get_news_response = json.loads(get_news_data)
+
+        news_results = None
+
+        if get_news_response['sources']:
+            news_results_list = get_news_response['sources']
+            news_results = process_news(news_results_list)
+
+    return news_results
