@@ -2,7 +2,7 @@
 Application for news.
 
 ## Description
-This is a web application that consumes an API and post news from various news sources. The site has four categories of news and a user can can click on a news source to view various articles from the news site.
+This is a web application that consumes an API and posts news from various news sources. The site has four categories of news and a user can click on a news source to view various articles from the news site.
 
 ## Setup Requirements
 * Web Browser
