@@ -30,10 +30,7 @@ This is a web application that consumes an API and post news from various news s
 > ./start.sh
 * View the application in your browser:
 > http://127.0.0.1:5000/
-
-
-## Viewing Live
-Click this link to view:  
+ 
 ## Technologies Used
 * Python
 * Flask
@@ -47,3 +44,11 @@ So far there is no known bug
 For any Support or Feedback, fill free to contact the me through: 
 * Email at ngetichgideon21@gmail.com 
 * Phone on +254704843484
+
+## Live site
+
+View live site [here](https://gidz-news-api.herokuapp.com/).
+
+## License & copyright
+Licensed under the [MIT License](LICENSE).<br />
+Copyright (c) 2021 Kipkorir-Gideon
