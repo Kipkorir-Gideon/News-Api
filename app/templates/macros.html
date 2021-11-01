@@ -3,7 +3,7 @@
 {% for news_row in news_list |batch(4)%}
 <div class="row">
 	{% for news in news_row %}
-	<div class="col-md-6 border border-secondary">
+	<div class="col-md-6" style="border: 1px solid rgb(177, 171, 171); border-radius: 10px; margin: 1px; width: 48%; height: 190px;" >
 		<div>
 			<h3>{{ news.name}}</h3>
 		</div>
