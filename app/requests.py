@@ -82,7 +82,7 @@ def process_articles(articles_list):
         articles_results: A list of articles objects
     '''
 
-    articles_list = []
+    articles_object = []
     for article_item in articles_list:
         id = article_item.get('id')
         author = article_item.get('author')
@@ -94,6 +94,6 @@ def process_articles(articles_list):
 
         if image:
             articles_results = Articles(id,author,title,description,url,image,date)
-            articles_list.append(articles_results)
+            articles_object.append(articles_results)
 
-    return articles_results
+    return articles_object

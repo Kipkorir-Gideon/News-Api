@@ -12,26 +12,33 @@
 <!-- Content block -->
 {% block content%}
 <div class="container">
-<div class="card-header banner">
-    <h1>GLOBAL NEWS.</h1>
-    <P class="intro">Read various News categories from around around the globe</P>
-</div>
+    <div class="card-header banner">
+        <h1>GLOBAL NEWS</h1>
+        <P class="intro">Read various News categories from around the globe</P>
+    </div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="">
             <h2>Business</h2>
             {{ macro.displayNewsList(business)}}
         </div>
-        <div class="col-md-6">
+    </div>
+
+    <div class="row">
+        <div class="">
             <h2> Technology</h2>
             {{ macro.displayNewsList(technology)}}
         </div>
     </div>
+
     <div class="row">
-        <div class="col-md-6">
+        <div class="">
             <h2>Entertainment</h2>
             {{ macro.displayNewsList(entertainment)}}
         </div>
-        <div class="col-md-6">
+    </div>
+
+    <div class="row">
+        <div class="c">
             <h2> Sports</h2>
             {{ macro.displayNewsList(sports)}}
         </div>
