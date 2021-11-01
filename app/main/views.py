@@ -16,7 +16,7 @@ def index():
     technology = get_news('technology')
     entertainment = get_news('entertainment')
     sports = get_news('sports')
-    title = "Various News fro Around The Globe"
+    title = "Global News"
 
 
     return render_template('index.html', title = title, business = business, technology = technology, entertainment = entertainment, sports = sports) 
