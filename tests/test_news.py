@@ -16,8 +16,8 @@ class NewsTest(unittest.TestCase):
         self.assertTrue(isinstance(self.news,News))
 
     def test_to_check_instance_variables(self):
-        self.assertEquals(self.new_source.id,'Yuri1')
-        self.assertEquals(self.new_source.name,'Yuri News')
-        self.assertEquals(self.new_source.description,'Facebook changed its parent name to Meta.')
-        self.assertEquals(self.new_source.url,'https://www.yurinews.com/section/news')
-        self.assertEquals(self.new_source.category,'technology')
+        self.assertEquals(self.news.id,'Yuri1')
+        self.assertEquals(self.news.name,'Yuri News')
+        self.assertEquals(self.news.description,'Facebook changed its parent name to Meta.')
+        self.assertEquals(self.news.url,'https://www.yurinews.com/section/news')
+        self.assertEquals(self.news.category,'technology')
